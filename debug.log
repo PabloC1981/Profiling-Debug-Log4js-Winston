@@ -1,0 +1,22 @@
+{"level":"info","message":"GET at /"}
+{"level":"info","message":"Prueba Winston"}
+{"level":"info","message":"GET at /"}
+{"level":"info","message":"Prueba Winston"}
+{"level":"info","message":"GET at /"}
+{"level":"info","message":"Prueba Winston"}
+{"level":"info","message":"GET at /"}
+{"level":"info","message":"Prueba Winston"}
+{"level":"info","message":"GET at /"}
+{"level":"info","message":"Prueba Winston"}
+{"level":"info","message":"GET at /fdasf"}
+{"level":"warn","message":"Error Acceso Ruta no Valida"}
+{"level":"info","message":"GET at /"}
+{"level":"info","message":"Prueba Winston"}
+{"level":"info","message":"GET at /"}
+{"level":"info","message":"Prueba Winston"}
+{"level":"info","message":"GET at /5465"}
+{"level":"warn","message":"Error Acceso Ruta no Valida"}
+{"level":"info","message":"GET at /error"}
+{"level":"warn","message":"Error Acceso Ruta no Valida"}
+{"level":"info","message":"GET at /error"}
+{"level":"error","message":"Error Winston"}
