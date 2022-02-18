@@ -6,11 +6,11 @@ import isPrime from './utils.js';
 const PORT = parseInt(process.argv[2])||8080;
 const isCluster = process.argv[3] ==="CLUSTER";
 
-if(isCluster&&cluster.isPrimary){
+if(isCluster&&cluster.isMaster){
     //INSTANCIAR A MIS WORKERS
     const numCPUs = cpus().length;
     console.log(`PID Master: ${process.pid}`);
-    for(i=0;i>numCPUs;i++){
+    for(let i=0;i<numCPUs;i++){
         cluster.fork();
     }
     cluster.on('exit',worker=>{
@@ -33,3 +33,9 @@ else{
 // respuesta de consola PID worker working on PORT: 8080
 //consulta artillery quick --count 100 -n 20 http://localhost8080?max=100000 >result_fork.txt
 //result en archivo txt
+//node app.js 8080 CLUSTER
+//respuesta :
+// PID worker working on PORT: 8080
+// PID worker working on PORT: 8080
+// PID worker working on PORT: 8080
+// PID worker working on PORT: 8080
